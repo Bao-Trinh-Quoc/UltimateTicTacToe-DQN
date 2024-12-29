@@ -10,6 +10,7 @@ import tqdm
 
 env = SinglePlayerEnv(RandomAgent(2))
 
+# DQNAgent(2, env, loading=True, name="500_final")
 agents1 = [
     DQNAgent(1, env, loading=True, name="ver1_final")
     # MinimaxPruningAgent(1, 3, True)
@@ -17,10 +18,8 @@ agents1 = [
 ]
 
 agents2 = [
-    # DQNAgent(2, env, loading=True, name="ver1")
-    # RandomAgent(2)
+    RandomAgent(2)
     # MinimaxPruningAgent(2, 3, True)
-    DQNAgent(2, env, loading=True, name="500_final")
 ]
 
 if __name__ == '__main__':
